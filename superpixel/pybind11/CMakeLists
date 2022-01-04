@@ -1,0 +1,13 @@
+# Generate python module library
+if(PYBIND_LIB)
+    message("GENERATING PYBIND LIBRARY")
+
+    add_definitions(-DPYBIND)
+
+    find_package(PythonLibs)
+    include_directories(${PYTHON_INCLUDE_DIRS})
+
+    add_subdirectory(pybind11)
+    pybind11_add_module(ers src/pugixml.cpp src/functions.cpp src/musicxml.cpp)
+    target_include_directories(maialib PUBLIC include)
+endif()
