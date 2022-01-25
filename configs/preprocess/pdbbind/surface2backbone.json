@@ -1,0 +1,5 @@
+{"max_num_neighbors": 128,
+ "mode": "ca",
+ "radius": 12.0,
+ "sigma": 18.0
+}

@@ -22,7 +22,6 @@ binaries/
 build/
 datasets/
 dist/
-configs/
 *.tar.gz
 
 .ipynb_checkpoints 

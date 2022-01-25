@@ -1,0 +1,64 @@
+split:
+    value: base
+dataset:
+    value: enzyme
+prot_mode:
+    value: patch2backbone
+encoder:
+    value: wln
+hsize:
+    value: 512
+bhsize:
+    value: 150
+shsize:
+    value: 150
+bdepth:
+    value: 5
+sdepth:
+    value: 4
+n_classes:
+    value: 384
+dropout_mlp:
+    value: 0.3
+dropout_mpn:
+    value: 0.15
+lr:
+    value: 0.0005
+clip_norm:
+    value: 10.0
+epochs:
+    value: 300
+num_workers:
+    value: 6
+batch_size:
+    value: 8
+step_after:
+    value: 50
+scheduler_type:
+    value: plateau
+accum_every:
+    value: null
+metric_thresh:
+    value: 0.01
+patience:
+    value: 10
+anneal_rate:
+    value: 0.6
+use_doubles:
+    value: False
+use_concat:
+    value: False
+use_grad_noise:
+    value: True
+use_attn:
+    value: False
+print_every:
+    value: 500
+eval_every:
+    value: 1500
+activation:
+    value: lrelu
+jk_pool:
+    value: null
+use_mpn_in_patch:
+    value: False

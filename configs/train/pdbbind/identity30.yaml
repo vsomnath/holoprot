@@ -1,0 +1,68 @@
+split:
+    value: identity30
+dataset:
+    value: pdbbind
+prot_mode:
+    value: surface2backbone
+encoder:
+    value: wln
+hsize:
+    value: 512
+bhsize:
+    value: 200
+shsize:
+    value: 150
+bdepth:
+    value: 5
+sdepth:
+    value: 6
+lig_hsize:
+    value: 300
+lig_depth:
+    value: 4
+dropout_mlp:
+    value: 0.3
+dropout_mpn:
+    value: 0.15
+lr:
+    value: 0.001
+clip_norm:
+    value: 10.0
+weight_decay:
+    value: 0.001
+epochs:
+    value: 200
+num_workers:
+    value: 6
+batch_size:
+    value: 1
+step_after:
+    value: 50
+scheduler_type:
+    value: plateau
+accum_every:
+    value: null
+metric_thresh:
+    value: 0.01
+patience:
+    value: 5
+accum_every:
+    value: 32
+anneal_rate:
+    value: 0.9
+use_doubles:
+    value: False
+use_concat:
+    value: False
+use_grad_noise:
+    value: True
+use_attn:
+    value: False
+print_every:
+    value: 500
+eval_every:
+    value: 1900
+ligand_only:
+    value: False
+use_mpn_in_patch:
+      value: False
