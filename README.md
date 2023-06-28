@@ -4,9 +4,11 @@
 
 This is the official [PyTorch](https://pytorch.org/) implementation for _HoloProt_ ([Somnath et al. 2021](https://openreview.net/forum?id=-xEk43f_EO6))
 
-### Changelog
+## Changelog
 
 [28.06.2023]: Added the binaries configuration used with the paper (Refer to Enviroment Variables section)
+
+## Installation
 
 ##### Binaries
 Our work utilizes several binaries for generating surfaces, compressing them and computing chemical features and secondary structures.
@@ -14,7 +16,6 @@ Our work utilizes several binaries for generating surfaces, compressing them and
 * [DSSP](https://swift.cmbi.umcn.nl/gv/dssp/). To compute the secondary structure of proteins.
 * [BLENDER](https://www.blender.org/). To fix meshes and remove any redundancies, while reducing them to a desired number of faces.  
 * PDB2PQR (2.1.1), multivalue, and [APBS](http://www.poissonboltzmann.org/) (1.5). These programs are necessary to compute electrostatics charges.
-
 
 ##### Environment Variables
 After downloading the binaries, one needs to set environment variables to the corresponding paths.
@@ -41,7 +42,7 @@ After untaring the file in an appropriate directory, please add the following co
 export LD_LIBRARY_PATH=$PATH_TO_DIR/binaries/boost/lib:${PATH_TO_MINICONDA}/lib:${PATH_TO_DIR}/binaries/apbs/lib:$HOME/lib:$LD_LIBRARY_PATH
 ```
 
-##### Installation
+##### Final installation
 To install all dependencies, run
 ```
 ./install_dependencies.sh
