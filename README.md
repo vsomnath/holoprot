@@ -2,9 +2,11 @@
 
 (Under Construction and Subject to Change)
 
-Pending: Update links for dataset.
-
 This is the official [PyTorch](https://pytorch.org/) implementation for _HoloProt_ ([Somnath et al. 2021](https://openreview.net/forum?id=-xEk43f_EO6))
+
+### Changelog
+
+[28.06.2023]: Added the binaries configuration used with the paper (Refer to Enviroment Variables section)
 
 ##### Binaries
 Our work utilizes several binaries for generating surfaces, compressing them and computing chemical features and secondary structures.
@@ -31,6 +33,13 @@ source ~/.bashrc
 As a sanity check for correct installation, try entering `$BINARY_NAME` in the command line, and 
 check if it produces a meaningful result. If it throws a lib.xx.xx.so not found, please try setting 
 your `LD_LIBRARY_PATH` to the appropriate directories.
+
+The binaries configuration used in this work can be found [here](https://drive.google.com/file/d/1fA___DX04zBuWPLV65ZTA4kadfmY_WDc/view?usp=sharing). 
+After untaring the file in an appropriate directory, please add the following commands to your `~/.bashrc` file:
+
+```
+export LD_LIBRARY_PATH=$PATH_TO_DIR/binaries/boost/lib:${PATH_TO_MINICONDA}/lib:${PATH_TO_DIR}/binaries/apbs/lib:$HOME/lib:$LD_LIBRARY_PATH
+```
 
 ##### Installation
 To install all dependencies, run
