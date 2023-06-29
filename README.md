@@ -4,6 +4,8 @@
 
 This is the official [PyTorch](https://pytorch.org/) implementation for _HoloProt_ ([Somnath et al. 2021](https://openreview.net/forum?id=-xEk43f_EO6))
 
+![holoprot-cov](./assets/holoprot.png)
+
 ## Changelog
 
 [28.06.2023]: Added the binaries configuration used with the paper (Refer to Enviroment Variables section)
