@@ -8,6 +8,7 @@ This is the official [PyTorch](https://pytorch.org/) implementation for _HoloPro
 
 ## Changelog
 
+[30.06.2023]: Added all the raw & processed datasets and binaries to Zenodo.\
 [28.06.2023]: Added the binaries configuration used with the paper (Refer to Enviroment Variables section)
 
 ## Installation
@@ -37,7 +38,7 @@ As a sanity check for correct installation, try entering `$BINARY_NAME` in the c
 check if it produces a meaningful result. If it throws a lib.xx.xx.so not found, please try setting 
 your `LD_LIBRARY_PATH` to the appropriate directories.
 
-The binaries configuration used in this work can be found [here](https://drive.google.com/file/d/1fA___DX04zBuWPLV65ZTA4kadfmY_WDc/view?usp=sharing). 
+The binaries configuration used in this work can be found [here](https://zenodo.org/record/8102783/). 
 After untaring the file in an appropriate directory, please add the following commands to your `~/.bashrc` file:
 
 ```
@@ -62,9 +63,12 @@ Datasets are organized in the `$PROT/datasets` directory. The raw datasets are p
 while the processed datasets are placed in `$PROT/datasets/processed`
 
 ### Dataset Download
-Download the `PDBBind` dataset from [here](https://drive.google.com/file/d/1o0_0OM_2PykzQTXCYagdJA2w4zoE4AUt/view?usp=sharing) and the `Enzyme` dataset from [here](https://drive.google.com/file/d/1bk0VDzgwNLr2YdIMebB-pBHMJ18_b5lX/view?usp=sharing), and place them in `$PROT/datasets/raw`, and untar these files.
+All datasets used in this work can be found on [zenodo](https://zenodo.org/record/8102783).
 
-TODO: Add examples on how people can process their own pdb files
+1. Download files `DATASET_NAME_raw.tar.gz` to `$PROT/datasets/raw` and extract.
+2. Download files `DATASET_NAME_s2b.tar.gz`, `DATASET_NAME_p2b_20.tar.gz` to `$PROT/datasets/processed/DATASET_NAME` and extract.
+
+where `DATASET_NAME` is one of `pdbbind, enzyme`.
 
 ### Dataset Cleanup and Running binaries
 Before preparing the graph objects, we need to clean up the pdb files and run the binaries. Possible set of tasks include:
